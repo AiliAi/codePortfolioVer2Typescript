@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "title": "About me",
+            "content": "Hi! My name is Aili Priimann. I have recently graduated from the Metropolia University of Applied Sciences with a specialisation in web development and digital media in information and communication technology./ Find out more about me on ",
+            "shape": "me",
+            "linkName": "Linkedin",
+            "link": "https://www.linkedin.com/in/ailipriimann/"
+        },
+        {
+            "title": "Portfolio",
+            "content": "On this portfolio page you can see summary videos and code from my previous works./ Additional info: this page is made with React. You can look the code on ",
+            "shape": "aboutIcon",
+            "linkName": "Github",
+            "link": "https://github.com/AiliAi/codePortfolioVer2TypeScript"
+        },
+        {
+            "title": "Keywords",
+            "content": "Frontend/ digital media/ Javascript/ React/ P5.js/ Three.js/ UX/ UI frameworks/ SCSS/ Video/ live streamings/ Adobe/ 3D/ Virtual reality/ Virtual tours/ Unity/ Photogrammetry/ Blender/ SQL/ NoSQL/ PHP/ Node.js/ Express/ Azure cloud/ Ubundu/ C#/ Java/ Kotlin/ Docker/ Power BI",
+            "shape": "keywords"
+        },
+        {
+            "title": "Plans",
+            "content": "1. Learn D3.js: Create a data visualization application using the D3.js library and fetch a data from some API./ 2. Learn backend more deeply: Try some headless API solution and ASP.NET or Spring.",
+            "shape": "plans"
+        }
+    ]
+}

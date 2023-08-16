@@ -1,0 +1,150 @@
+@import "../../base";
+
+.contact {
+  background-color: $mainbg;
+}
+
+.contact > h2 {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 900;
+  font-size: 12vh;
+  background: -webkit-linear-gradient($mainlineDark, $mainLine);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.form-button {
+  padding: 2em;
+  padding-bottom: 10vh;
+}
+
+label {
+  display: flex;
+  color: $hover;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  text-decoration: underline solid $hover 5px;
+  text-underline-offset: 0.2em;
+}
+
+input,
+textarea {
+  display: flex;
+  width: 400px;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 0.7em;
+  box-shadow: 0px 8px 15px 4px rgb(165, 165, 165);
+  font-size: 1.1em;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline-offset: 0px;
+  outline: none;
+  border-color: $hover;
+}
+
+.overlay-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 98;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-modal {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  max-width: 20rem;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  padding: 5px 0;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1.25rem 1.5rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+  appearance: none;
+  cursor: pointer;
+  transition: box-shadow 100ms ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close svg {
+  font-size: 2.5em;
+  color: $mainbg;
+}
+.modal-close svg:hover {
+  font-size: 2.5em;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact > h2 {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 7vh;
+  }
+
+  .form-button {
+    padding-bottom: 5vh;
+  }
+
+  input,
+  textarea {
+    width: 80vw;
+  }
+}

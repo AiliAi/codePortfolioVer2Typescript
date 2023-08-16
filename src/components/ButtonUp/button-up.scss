@@ -1,0 +1,23 @@
+@import "../../base";
+
+#up-button  {
+    display: block;
+    position: fixed;
+    bottom: 1.8vh;
+    right: 2.2vh;
+    z-index: 99;
+    font-size: 7vh;
+    color: $mainlineDark;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.2em 0.2em 0 0.2em;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #up-button  {
+        display: block;
+        position: fixed;
+        bottom: 1.8vh;
+        right: 2vh;
+    }
+}

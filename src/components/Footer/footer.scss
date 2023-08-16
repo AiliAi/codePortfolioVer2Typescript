@@ -1,0 +1,35 @@
+@import "../../base";
+
+.footer {
+    display: flex;
+    flex: 1;
+    background-color: $mainbgDark;
+    justify-content: center;
+    align-items: center;
+    color: $mainbg;
+    flex-direction: column;
+    padding: 3em 0.5em;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $mainbg;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+.social-media-icon {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 5vh 0.5em;
+    }
+}

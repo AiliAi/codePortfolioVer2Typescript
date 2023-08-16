@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+
+
+$mainbg: #dadffd;
+$mainbgT: rgba(218, 223, 253, 0.9);
+$mainbgLight: rgb(255, 255, 255);
+$mainbgLightT: rgba(255, 255, 255, 0.9);
+$mainbgDark: #5C53DB;
+$mainLine: #64F9CD;
+$mainlineDark: #00b3d6;
+$hover: #3078ec;
+
+.paragraph {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}

@@ -1,0 +1,242 @@
+@import "../../base";
+
+h3 {
+    color: $hover;
+    font-size: 1.7em;
+    border-bottom: 5px solid $hover;
+    padding: 0.3em;
+    margin-bottom: 0em;
+    font-weight: 600;
+}
+
+.text-eye, .text-link {
+  svg path {
+      fill: url(#mygradient);
+  }
+}
+
+@mixin spacing-icon {
+  white-space: nowrap;
+  color: $mainlineDark;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.works-img .overlay {
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+@mixin layout {
+    .overlay {
+        position: absolute;
+        bottom: 35%;
+        background-color: $mainbgLightT;
+        overflow: hidden;
+        width: 30%;
+        height: 30%;
+
+        .text-link {
+          @include spacing-icon;
+            font-size: 2.5em;
+            top: 47%;
+        }
+
+        .text-eye {
+          @include spacing-icon;
+          font-size: 3.8em;
+          top: 47%;
+      }
+
+        .text {
+          @include spacing-icon;
+          font-size: 1.3rem;
+          top: 67%;
+      }
+    }
+}
+
+.layout1 {
+    @include layout;
+
+    .overlay {
+        left: 70%;
+        right: 0;
+    }
+
+    img {
+        border-top-left-radius: 200px;
+    }
+}
+
+.layout2 {
+    @include layout;
+
+    .overlay {
+        left: 0;
+        right: 70%;
+        background-color: $mainbgT;
+    }
+
+    img {
+        border-top-right-radius: 200px;
+    }
+}
+
+@mixin custom-hover {
+  color: $hover;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.works-img:hover .overlay {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+
+    .text-link {
+      @include custom-hover;
+    }
+
+    .text-eye {
+      @include custom-hover;
+  }
+
+    .text {
+      @include custom-hover;
+  }
+
+}
+
+.works-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 620px;
+
+    a {
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 620px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .layout1 {
+
+        .overlay {
+            bottom: 0%;
+            left: 35%;
+            right: 35%;
+
+            .text-eye {
+              top: 47%;
+          }
+
+            .text-link {
+            top: 45%;
+          }
+
+            .text{
+            font-size: 1.1rem;
+            top: 80%;
+          }
+        }
+    }
+
+    .layout2 {
+
+        .overlay {
+            bottom: 0%;
+            left: 35%;
+            right: 35%;
+
+            .text-eye {
+              top: 47%;
+          }
+
+            .text-link {
+            top: 47%;
+          }
+
+            .text{
+            font-size: 1.1rem;
+            top: 77%;
+          }
+        }
+    }
+
+    .works-inside {
+        padding-bottom: 3em;
+    }
+
+    .works-img {
+        height: 300px;
+
+        a {
+            img {
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .layout1 {
+
+        img {
+            border-top-left-radius: 100px;
+        }
+
+        .overlay {
+          .text-eye {
+            font-size: 3.4em;
+          }
+
+          .text-link {
+            font-size: 2.5em;
+          }
+        }
+    }
+
+    .layout2 {
+
+        img {
+            border-top-right-radius: 100px;
+        }
+
+        .overlay {
+          .text-eye {
+            font-size: 3.4em;
+          }
+
+          .text-link {
+            font-size: 2.5em;
+          }
+        }
+    }
+
+    h3 {
+        margin-bottom: 0em;
+    }
+}

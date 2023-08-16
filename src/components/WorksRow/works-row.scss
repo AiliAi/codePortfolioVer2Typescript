@@ -1,0 +1,58 @@
+@import "../../base";
+
+@mixin layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1;
+    z-index: 2;
+    background-color: $mainbgLight;
+    box-shadow: 0px 8px 15px 4px rgb(63, 63, 63);
+    margin: 2em;
+}
+
+.layout1 {
+    @include layout;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+
+.layout2 {
+    @include layout;
+    background-color: $mainbg;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+@mixin custom-hover {
+  color: $hover;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+
+@media (max-width: 1000px) {
+    .layout1 {
+        flex-direction: column;
+    }
+
+    .layout2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 600px) {
+    .layout1 {
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        margin: 1.1em 1em;
+    }
+
+    .layout2 {
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        margin: 1.1em 1em;
+    }
+}

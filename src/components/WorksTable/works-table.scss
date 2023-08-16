@@ -1,0 +1,28 @@
+@import "../../base";
+
+.works {
+  background-color: $mainbgDark;
+  padding-bottom: 10vh;
+}
+
+.works > h2 {
+  margin-top: 10vh;
+  margin-bottom: -12vh;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 900;
+  font-size: 12vh;
+  background: -webkit-linear-gradient($mainlineDark, $mainLine);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
+}
+
+.works-container {
+  margin-top: 16vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: center;
+}

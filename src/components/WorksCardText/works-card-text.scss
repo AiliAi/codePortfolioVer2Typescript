@@ -1,0 +1,43 @@
+@import "../../base";
+
+.works-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.works-inside {
+    padding: 2em;
+    margin-top: -1.3em;
+    padding-bottom: 0;
+
+    a:link,
+    a:visited,
+    a:active {
+        color: $mainlineDark;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    a:hover {
+        color: $hover;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .works-inside {
+        padding-bottom: 3em;
+    }
+}
+
+@media (max-width: 600px) {
+    .works-inside {
+        padding: 1em 1.2em;
+        padding-bottom: 2em;
+    }
+
+    .works-container {
+        margin-top: 10vh;
+    }
+}

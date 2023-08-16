@@ -1,0 +1,99 @@
+@import "base.scss";
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $mainbgDark;
+}
+
+.over {
+  position: absolute;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+}
+
+.no-canvas {
+  background-color: $mainbgDark;
+}
+
+h1 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 900;
+  font-size: 7vw;
+  background: -webkit-linear-gradient($mainlineDark, $mainLine);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
+}
+
+.button-text {
+  background: -webkit-linear-gradient($mainlineDark, $mainLine);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+button.round-button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0.5em 1.5em;
+  border-radius: 3em;
+  border: none;
+  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  border: 3px solid $mainlineDark;
+}
+
+.round-button:hover,
+.round-button:active {
+  background: -webkit-linear-gradient($mainLine, $mainLine);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 3px solid $mainLine;
+
+  .button-text {
+    background: -webkit-linear-gradient($mainLine, $mainLine);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5.7vh;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 5vh;
+  }
+}
