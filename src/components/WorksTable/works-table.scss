@@ -26,3 +26,11 @@
   flex: 1;
   align-content: center;
 }
+
+@media (max-width: 600px) {
+  .works > h2 {
+    margin-top: 5vh;
+    margin-bottom: -8vh;
+    font-size: 7vh;
+  }
+}
