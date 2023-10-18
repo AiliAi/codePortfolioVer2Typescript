@@ -13,6 +13,16 @@
     cursor: pointer;
 }
 
+#up-button:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s;
+  }
+
 @media (max-width: 600px) {
     #up-button  {
         display: block;
